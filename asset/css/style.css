@@ -1,0 +1,448 @@
+html
+{
+    background: #f5f5f5;
+    background:  #1b1829 url("../images/bg.jpg") no-repeat top right;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f2f2f2;
+}
+
+body
+{
+    background: url("../images/bg-mask.png");
+    border-bottom: 20px double;
+    border-bottom-color: rgb(60,40,121);
+    border-bottom-color: rgba(60,40,121,0.7);
+    min-height: 700px;
+    margin-bottom: 1em;
+}
+
+.navbar
+{
+    font-weight: bold;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.23);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.18);
+}
+
+a
+{
+    box-shadow: 0 0 0 0 #fff;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.navbar-nav li a,
+.modal-body a
+{
+    outline: none !important;
+}
+
+.navbar-nav li:hover
+{
+    background: #e8e1f6 url("../images/menu-item-bg.gif");
+    box-shadow: 0 -2px 2px 0 #888;
+}
+
+.navbar-nav li a:active,
+.navbar-nav li a:focus
+{
+    text-shadow: 0 0 3px #888;
+}
+
+.navbar-nav li:active,
+.navbar-nav li:focus,
+html.lt-ie9 .navbar-nav li a:active, /*for IE */
+html.lt-ie9 .navbar-nav li a:focus
+{
+    background: #e8e1f6 url("../images/menu-item-bg2.gif");
+    box-shadow: 0 2px 2px 0 #888 inset !important;
+}
+
+h1,h2,h3
+{
+    color: #1abc9c;
+}
+
+footer
+{
+    color: #76619b;
+    margin-top: 2em;
+}
+
+footer a
+{
+    color: #8d77b4;
+    font-weight: bold;
+}
+
+footer a:hover
+{
+    color: #ffffff;
+}
+
+hr
+{
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.18);
+}
+
+#main-card, #main-content
+{
+    margin-top: 4.5em;
+    border-top: 0.6em solid #8fc996;
+}
+
+#main-content.jumbotron
+{
+    padding-top: 2em;
+}
+
+#main-card .row,
+#main-content .row,
+{
+    margin: 0 auto;
+}
+
+#my-pic-container
+{
+    margin-bottom: 3em;
+}
+
+.my-pic
+{
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0 #888;
+    -webkit-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#my-pic0
+{
+    -webkit-transform: rotate(6deg) scale(0.95);
+    -ms-transform: rotate(6deg) scale(0.95);
+    transform: rotate(6deg) scale(0.95);
+}
+
+#my-pic1
+{
+    -webkit-transform: rotate(-2deg) scale(0.95);
+    -ms-transform: rotate(-2deg) scale(0.95);
+    transform: rotate(-2deg) scale(0.95);
+}
+
+#my-pic2
+{
+    -webkit-transform: rotate(-6deg) scale(0.95);
+    -ms-transform: rotate(-6deg) scale(0.95);
+    transform: rotate(-6deg) scale(0.95);
+}
+
+#my-pic0, #my-pic1, #my-pic2{
+    filter: sepia(1) opacity(0.2) contrast(0.5) contrast(0.5);
+}
+
+#my-pic
+{
+    -webkit-transform: rotate(4deg) scale(0.95) rotateY(0deg) perspective(600px);
+    transform: rotate(4deg) scale(0.95) rotateY(0deg) perspective(600px);
+}
+
+#my-pic-container img
+{
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+#my-pic-container:hover #my-pic
+{
+    -webkit-backface-visibility: visible !important;
+    -ms-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation: myPic 5s ease 1 alternate;
+    -ms-animation: myPic 5s ease 1 alternate;
+    animation: myPic 5s ease 1 alternate;
+    -webkit-transform: rotate(0deg) scale(0.95) rotateY(360deg);
+    transform: rotate(0deg) scale(0.95) rotateY(360deg);
+}
+
+#my-pic-container:hover #my-pic2
+{
+    -webkit-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+#my-pic-container:hover #my-pic1
+{
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+}
+
+#my-pic-container:hover #my-pic0
+{
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+#my-info
+{
+    margin-top: -1em;
+    padding-left: 4em;
+}
+
+.btn
+{
+    font-weight: bold;
+}
+
+.hero-feature h3 {
+    font-size: 1.16em;
+    font-weight: bold;
+    text-shadow: 0 2px 0 rgba(0, 120, 100, 0.15);
+}
+
+#project-images.row .project-preview
+{
+
+    -webkit-filter: grayscale(1) contrast(1.5);
+    opacity: 0.65;
+    border: 2px solid #fff;
+    border-radius: 3px;
+
+}
+
+.modal-body .img-responsive
+{
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    box-shadow: 2px 2px 0 #eeeeee;
+}
+
+#main-content .img-responsive
+{
+    border: 4px solid #ffffff;
+    border-radius: 2px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#page-content-body
+{
+    padding: 2em;
+}
+
+html.lt-ie9 #project-images.row .project-preview
+{
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+
+.thumbnail,
+#project-images.row .project-preview
+{
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.thumbnail:hover
+{
+    box-shadow: 0 0 4px 2px rgba(255,255,255,0.3);
+}
+
+
+.projects-page .thumbnail
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-page .caption {
+    background: #1f054b;
+    background: #1f054bdb;
+    color: #fff;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content .caption img
+{
+    border: 6px solid #fff;
+    border-radius: 2px;
+    box-shadow: 4px 2px 7px #888;
+}
+
+.caption img
+{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 1em auto;
+}
+
+.projects-page .caption img
+{
+    display: none;
+}
+
+/* .projects-page .thumbnail:hover img.project-preview
+{
+    filter: grayscale(0) contrast(1.1) blur(1.1);
+} */
+
+.projects-page .thumbnail:hover a.project-img-link {
+    filter: blur(8px);
+}
+
+.projects-page .thumbnail:hover .caption
+{
+    top: 0;
+    overflow-y: auto;
+    opacity: 1;
+}
+
+#project-images.row .hero-feature:hover .project-preview
+{
+    filter: grayscale(0) contrast(1.1);
+    opacity: 1;
+    border-color: #1abc9c;
+}
+
+.modal-backdrop
+{
+    position: fixed;
+}
+
+.modal-loading
+{
+    background: url("../images/preloader.gif") no-repeat center center;
+    display: block;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    text-shadow: 0 0 25px #f0f;
+}
+
+#btn-load-more
+{
+    margin-bottom: 5em;
+}
+
+html.lt-ie9 .ekko-lightbox-container img.img-responsive
+{
+    display: block;
+    margin: 0 auto;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+html.lt-ie9 #project-images.row .hero-feature:hover .project-preview
+{
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=0) !important;
+}
+
+#white-screen
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000;
+}
+
+html.lt-ie9 #white-screen
+{
+    display: none;
+}
+
+.project-title
+{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.project-title:hover
+{
+    color: #1abc9c;
+}
+
+@keyframes myPic {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.95) rotateY(0deg) perspective(600px);
+        transform: rotate(0deg) scale(0.95) rotateY(0deg) perspective(600px);
+    }
+    25%
+    {
+        -webkit-transform: rotate(-3deg) scale(0.95) rotateY(0deg) perspective(600px);
+        transform: rotate(-3deg) scale(0.95) rotateY(0deg) perspective(600px);
+    }
+
+    50% {
+        -webkit-transform: rotate(-6deg) scale(1.15) rotateY(180deg) perspective(600px);
+        transform: rotate(-6deg) scale(1.15) rotateY(180deg) perspective(600px);
+    }
+    75% {
+        -webkit-transform: rotate(-6deg) scale(0.95) rotateY(360deg) perspective(600px);
+        transform: rotate(-6deg) scale(0.95) rotateY(360deg) perspective(600px);
+    }
+    100% {
+        -webkit-transform: rotate(0deg) scale(0.95) rotateY(360deg) perspective(600px);
+        transform: rotate(0deg) scale(0.95) rotateY(360deg) perspective(600px);
+    }
+}
+
+@media screen and (max-width: 1199px){
+
+    #main-card .row
+    {
+        text-align: center;
+    }
+
+    #my-pic-container
+    {
+        position: relative;
+        text-align: center;
+        margin: 2em auto;
+    }
+
+    #my-pic-container img
+    {
+        left: 50%;
+        margin-left: -200px;
+    }
+
+    #my-pic0
+    {
+        opacity: 0.01;
+    }
+
+    html.lt-ie9 #my-pic0
+    {
+        margin: 0 auto !important;
+    }
+
+    html.lt-ie9 #my-pic-container .my-pic
+    {
+        display: none;
+    }
+
+
+}
